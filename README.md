@@ -1,5 +1,5 @@
 # PaytmSDEChallenge
-Problem 1 : 
+# Problem 1 : 
 For the first problem we have defined Genric Interface which could calculate and return result with user provided DatType. 
 For Examplery we have provided implementation using BiGDecmimal for the precsion of the results.
 # Below are the mentioned Operation supported by the datastructure: 
