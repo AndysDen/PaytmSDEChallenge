@@ -27,7 +27,7 @@ For Examplery we have provided implementation using BiGDecmimal for the precsion
   I have added one testcase to demonstrate  to ArrayList is consistent with the insertion and access performance.
   # Future Enchancment
   We could consider adding another implementation of MovingAverage using LinkedList data Structure.
-  ================================================================================================================
+  
   # Problem 2 
   Design problem : 
     Please consider going through PaytmDesign-Solution.pdf under designproblem folder for discussion on  on 2nd problem. 
