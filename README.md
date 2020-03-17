@@ -28,5 +28,6 @@ For Examplery we have provided implementation using BiGDecmimal for the precsion
   # Future Enchancment
   We could consider adding another implementation of MovingAverage using LinkedList data Structure.
   ================================================================================================================
-  # Problem 2 Design problem : 
-    Please consider going through PaytmDesign-Solution.pdf to look at the discussion on it. 
+  # Problem 2 
+  Design problem : 
+    Please consider going through PaytmDesign-Solution.pdf under designproblem folder for discussion on  on 2nd problem. 
