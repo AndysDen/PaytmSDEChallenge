@@ -5,14 +5,23 @@ import static org.junit.Assert.assertNull;
 
 import java.math.BigDecimal;
 import java.util.Optional;
+import java.util.stream.IntStream;
+
+import javax.xml.stream.events.StartDocument;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import junit.framework.Assert;
 
 public class MovingAverageArrayListTest {
 	
 	
 	private MovingAverage<BigDecimal> movingAverage;
+	
+	private static final long NVALUE_SIZE=6000000;
+	private static final long ELEMENT_SIZE=9000000;
+	
 	
 	@Before
 	public void init() {
@@ -83,5 +92,19 @@ public class MovingAverageArrayListTest {
 		assertNull(movingAverage.getElement(6));
 		
 	}
+	@Test 
+	 public void testMovingAverageCalculationPerformance() {
+		MovingAverage<BigDecimal> movAvg= new MovingAverageArrayListImpl(NVALUE_SIZE);
+		long statTime=System.currentTimeMillis();
+		
+		IntStream.range(0,(int) ELEMENT_SIZE).boxed().forEach(i-> movAvg.addElement(BigDecimal.valueOf(i)));
+      assertEquals(5999999.5, movAvg.getMovingAverage().doubleValue(),0.001);
+      long endTime=System.currentTimeMillis();
+      System.out.println("Total time is seconds is "+(endTime-statTime) /1000);
+		
+		
+	}
+	
+	
 
 }
