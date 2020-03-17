@@ -24,5 +24,9 @@ For Examplery we have provided implementation using BiGDecmimal for the precsion
   3. Average is only re-calculated if a new element is added to the list. 
   4. If size of the list is less then N, then it Result zero is returned as result. 
   # Performance
-  
-  
+  I have added one testcase to demonstrate  to ArrayList is consistent with the insertion and access performance.
+  # Future Enchancment
+  We could consider adding another implementation of MovingAverage using LinkedList data Structure.
+  ================================================================================================================
+  # Problem 2 Design problem : 
+    Please consider going through PaytmDesign-Solution.pdf to look at the discussion on it. 
