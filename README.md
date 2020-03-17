@@ -4,6 +4,9 @@
 1. The solution has been created with the intension that ordering need to be preserved. 
 2. We have selected baseline datastructure from Collection API to support new enchancement with minimal coding. 
 3. I have used JDK 8 library for compiling and executing the code. 
+# Source code 
+1. Source code is in src folder we could directly import these classes and start using them
+2. I have also provided pom.xml for understanding of project structure 
 # Time complexity of operation
  Solution has been implemented using ArrayList , hence 
  1. Complexity of Insertion is O(1).
